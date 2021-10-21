@@ -3,6 +3,10 @@
         verdana,
         arial,
         georgia;
+    --font-size: .9rem;
+    --nav-menu: #000;
+    --border-radius-nav: 5px;
+    --color-letras-nav: #fff;
 }
 
 * {
@@ -21,6 +25,11 @@ body {
     padding: 0 1.5rem;
 }
 
+.flex {
+    display: flex;
+    gap: 20px;
+}
+
 /* !------- HEDEAR -------- */
 .header {
     display: flex;
@@ -34,7 +43,7 @@ body {
 .header__descripcion p {
     margin: 0 0 4px;
     font-family: var(--header-parrafo);
-    font-size: 12px;
+    font-size: var(--font-size);
 }
 
 figure {
@@ -94,11 +103,11 @@ figure {
 
 .list-nav a,
 .boton {
-    font-size: .9rem;
-    background-color: #000;
-    color: #fff;
+    font-size: var(--font-size);
+    background-color: var(--nav-menu);
+    color: var(--color-letras-nav);
     padding: .3rem .5rem;
-    border-radius: 5px;
+    border-radius: var(--border-radius-nav);
     display: inline-block;
     transition: all .3s ease;
     margin-top: .4rem;
@@ -111,9 +120,54 @@ figure {
 }
 
 .buscador form input {
-    border: 1px solid #000;
-    border-radius: 5px;
-    font-size: 1rem;
+    border: 1px solid var(--nav-menu);
+    border-radius: var(--border-radius-nav);
+    font-size: var(--font-size);
     padding: .3rem 1rem;
     width: 100%;
+}
+
+/* !Contenedor de peliculas */
+
+.contenedor-peliculas {
+    width: 70%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.peliculas-item {
+    border-radius: 10px;
+    min-height: 280px;
+    font-weight: bold;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+
+    width: calc(33.33% - 20px);
+}
+
+.peliculas-item .textos {
+    color: var(--color-letras-nav);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* !Contenedor de noticias */
+.sidebar {
+    background: slategray;
+    border-radius: 10px;
+    text-align: center;
+    padding: 20px;
+
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }

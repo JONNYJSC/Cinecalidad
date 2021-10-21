@@ -13,15 +13,15 @@ body {
     margin: 0;
 }
 
-.contenedor-header {
-    /* background: tan; */
-
+/* ?Contenedor Universal */
+.contenedor {
     width: 1000px;
     max-width: 100%;
     margin: 0 auto;
     padding: 0 1.5rem;
 }
 
+/* !------- HEDEAR -------- */
 .header {
     display: flex;
     justify-content: space-between;
@@ -58,8 +58,62 @@ figure {
     cursor: pointer;
 }
 
-/* @media screen and (min-width: 767px) {
-    .header__description p {
-        display: block;
-    }
-} */
+/* !------- NAV -------- */
+
+.flex-contenedor {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: calc(100% - 190px);
+    padding-right: 1.5rem;
+}
+
+.list-nav {
+    display: block;
+    width: calc(100% - 5rem);
+    order: 0;
+}
+
+.menu-nav {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.list-nav a {
+    text-decoration: none;
+}
+
+.list-nav a,
+.boton {
+    font-size: .9rem;
+    background-color: #000;
+    color: #fff;
+    padding: .3rem .5rem;
+    border-radius: 5px;
+    display: inline-block;
+    transition: all .3s ease;
+    margin-top: .4rem;
+    margin-bottom: .4rem;
+}
+
+.boton {
+    border: none;
+    cursor: pointer;
+}
+
+.buscador form input {
+    border: 1px solid #000;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: .3rem 1rem;
+    width: 100%;
+}

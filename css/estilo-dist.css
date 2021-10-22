@@ -168,9 +168,6 @@ figure {
 /* !Contenedor de aside */
 /* ? Peliculas de calidad */
 .sidebar {
-
-    /* background: tan; */
-
     border-radius: 10px;
 
     width: 30%;
@@ -238,8 +235,6 @@ figure {
 
 .contenedor-herramientas {
     width: 100%;
-    /* background: salmon; */
-    /* padding: 0 17px; */
 }
 
 .herramientas-link {
@@ -340,7 +335,12 @@ figure {
 }
 
 .titulo-item {
+    margin: 30px;
     font-size: 1.5rem;
+}
+
+hr {
+    color: #adadad;
 }
 
 /* ! footer */

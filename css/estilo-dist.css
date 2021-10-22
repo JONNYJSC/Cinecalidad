@@ -6,7 +6,10 @@
     --font-size: .9rem;
     --nav-menu: #000;
     --border-radius-nav: 5px;
-    --color-letras-nav: #fff;
+    --color-letras-nav: #eee;
+    --parrafo-aside: verdana;
+    --color-link: #099c8c;
+    --sidebar-font-size: .8rem;
 }
 
 * {
@@ -61,7 +64,7 @@ figure {
 }
 
 .header__link a {
-    color: #099c8c;
+    color: var(--color-link);
     text-decoration: none;
     font-weight: bold;
     cursor: pointer;
@@ -130,6 +133,8 @@ figure {
 /* !Contenedor de peliculas */
 
 .contenedor-peliculas {
+
+    /* background: steelblue; */
     width: 70%;
 
     display: flex;
@@ -159,15 +164,94 @@ figure {
     justify-content: space-between;
 }
 
-/* !Contenedor de noticias */
+/* !Contenedor de aside */
+/* ? Peliculas de calidad */
 .sidebar {
-    background: slategray;
+
+    /* background: tan; */
+
     border-radius: 10px;
-    text-align: center;
-    padding: 20px;
 
     width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+
+.texto-noticia {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    background: var(--nav-menu);
+    color: var(--color-letras-nav);
+    padding: 7px 10px;
+    border-radius: var(--border-radius-nav);
+}
+
+.texto-parrafo-sidebar {
+    text-align: left;
+    font-family: var(--parrafo-aside);
+    font-size: var(--sidebar-font-size);
+}
+
+.texto-link-sidebar {
+    text-align: left;
+    margin: 0;
+}
+
+.texto-link-sidebar li {
+    list-style: none;
+}
+
+.texto-link-sidebar li a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+/* ? Destacadas */
+
+.contenedor-destacadas {
+    width: 100%;
+}
+
+.contenedor-grid {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 7px 1fr 7px 1fr;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 7px;
+}
+
+.destacadas-item {
+    border-radius: 8px;
+    min-height: 125px;
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+}
+
+/* ? Herramientas */
+
+.contenedor-herramientas {
+    width: 100%;
+    /* background: salmon; */
+    /* padding: 0 17px; */
+}
+
+.herramientas-link {
+    display: flex;
+    flex-direction: column;
+}
+
+.herramientas-link ul {
+    margin: 0;
+    margin-left: -20px;
+}
+
+.herramientas-link li a {
+    text-decoration: none;
+    color: var(--color-link);
 }

@@ -2,8 +2,8 @@
     --header-parrafo:
         verdana,
         arial,
-        georgia;
-    --font-size: .9rem;
+        helvetica;
+    --font-size: .8rem;
     --nav-menu: #000;
     --border-radius-nav: 5px;
     --color-letras-nav: #eee;
@@ -14,6 +14,7 @@
 
 * {
     box-sizing: border-box;
+    font-family: var(--header-parrafo);
 }
 
 body {
@@ -252,6 +253,106 @@ figure {
 }
 
 .herramientas-link li a {
+    text-decoration: none;
+    color: var(--color-link);
+}
+
+/* ! Boton Más Películas */
+
+.boton-mas_peliculas {
+    /* background: teal; */
+    width: 100%;
+}
+
+.contenedor-boton {
+    /* background: tan; */
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boton-mas_peliculas {
+    background-color: var(--nav-menu);
+    border: none;
+    border-radius: var(--border-radius-nav);
+    color: var(--color-letras-nav);
+    padding: 3px 0px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: var(--font-size-nav);
+    cursor: pointer;
+}
+
+/* ! Pagínado */
+.contenedor-paginado {
+    width: 100%;
+}
+
+.flex-paginado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.row1,
+.row2 {
+    text-align: center;
+    border: 1px solid #000;
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.row3,
+.row4,
+.row5,
+.row6,
+.row7,
+.row8,
+.row9,
+.row10,
+.row11,
+.row12,
+.row13,
+.row14 {
+    text-align: center;
+    color: var(--color-link);
+    border: 1px solid var(--color-link);
+    padding: 3px 8px;
+    cursor: pointer;
+}
+
+.row2 {
+    font-weight: bold;
+}
+
+/* !Titulo al final */
+
+.contenedor-titulo {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.titulo-item {
+    font-size: 1.5rem;
+}
+
+/* ! footer */
+.footer {
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: #adadad;
+    font-size: var(--font-size);
+    text-align: center;
+}
+
+.footer a {
     text-decoration: none;
     color: var(--color-link);
 }

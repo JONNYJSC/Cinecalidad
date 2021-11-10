@@ -158,6 +158,67 @@ body {
     box-shadow: 0 3px 15px rgba(0, 0, 0, 0.7);
 }
 
+/* ? Lista de imaganes */
+.img1 {
+    background-image: url(../img/1.jpg);
+}
+
+.img2 {
+    background-image: url(../img/2.jpg);
+}
+
+.img3 {
+    background-image: url(../img/3.jpg);
+}
+
+.img4 {
+    background-image: url(../img/4.jpg);
+}
+
+.img5 {
+    background-image: url(../img/5.jpg);
+}
+
+.img6 {
+    background-image: url(../img/6.jpg);
+}
+
+.img7 {
+    background-image: url(../img/7.jpg);
+}
+
+.img8 {
+    background-image: url(../img/8.jpg);
+}
+
+.img9 {
+    background-image: url(../img/9.jpg);
+}
+
+.img10 {
+    background-image: url(../img/10.jpg);
+}
+
+.img11 {
+    background-image: url(../img/11.jpg);
+}
+
+.img12 {
+    background-image: url(../img/12.jpg);
+}
+
+.img13 {
+    background-image: url(../img/13.jpg);
+}
+
+.img14 {
+    background-image: url(../img/14.jpg);
+}
+
+.img15 {
+    background-image: url(../img/15.jpg);
+}
+
 /* TODO Revisar */
 .textos {
     color: var(--color-letras-nav);
